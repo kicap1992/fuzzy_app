@@ -148,23 +148,23 @@ function InputData(props) {
       <form className={classess.form} onSubmit={submitHandler}>
         <div className={classess.control}>
           <label htmlFor="title">Usia <i>(Minggu)</i> </label>
-          <input type="text" required id="usia" ref={usiaInputRef} placeholder={(datanya.status == 'error') ? 'Gagal Loading Server...' : `min ${datanya.detail_attribute.usia.min} - ${datanya.detail_attribute.usia.max-1} max` }  onInput={onInput} minLength="1" maxLength="4" />
+          <input type="text" required id="usia" ref={usiaInputRef} placeholder={(datanya.status == 'error') ? 'Gagal Loading Server...' : `min ${datanya.detail_attribute.usia.min+1} - ${datanya.detail_attribute.usia.max-1} max` }  onInput={onInput} minLength="1" maxLength="4" />
         </div>
         <div className={classess.control}>
           <label htmlFor="image">Berat <i>(Gram)</i> </label>
-          <input type="text" required id="berat" placeholder={(datanya.status == 'error') ? 'Gagal Loading Server...' : `min ${datanya.detail_attribute.berat.min} - ${datanya.detail_attribute.berat.max-50} max` } ref={beratInputRef} onInput={onInput} minLength="3" maxLength="5" />
+          <input type="text" required id="berat" placeholder={(datanya.status == 'error') ? 'Gagal Loading Server...' : `min ${datanya.detail_attribute.berat.min+50} - ${datanya.detail_attribute.berat.max-50} max` } ref={beratInputRef} onInput={onInput} minLength="3" maxLength="5" />
         </div>
         <div className={classess.control}>
           <label htmlFor="address">Keliling Buah <i>(cm)</i> </label>
-          <input type="text" required id="keliling" placeholder={(datanya.status == 'error') ? 'Gagal Loading Server...' : `min ${datanya.detail_attribute.keliling.min} - ${datanya.detail_attribute.keliling.max-1} max` } ref={kelilingInputRef} onInput={onInput} minLength="2" maxLength="4"/>
+          <input type="text" required id="keliling" placeholder={(datanya.status == 'error') ? 'Gagal Loading Server...' : `min ${datanya.detail_attribute.keliling.min+1} - ${datanya.detail_attribute.keliling.max-1} max` } ref={kelilingInputRef} onInput={onInput} minLength="2" maxLength="4"/>
         </div>
         <div className={classess.control}>
           <label htmlFor="description">Ukuran Batang <i>(cm)</i></label>
-          <input type="text" required id="ukuran_batang" placeholder={(datanya.status == 'error') ? 'Gagal Loading Server...' : `min ${datanya.detail_attribute.ukuran_batang.min} - ${datanya.detail_attribute.ukuran_batang.max-0.5} max` } ref={ukuranBatangInputRef} onInput={onInput} minLength="1" maxLength="3"/>
+          <input type="text" required id="ukuran_batang" placeholder={(datanya.status == 'error') ? 'Gagal Loading Server...' : `min ${datanya.detail_attribute.ukuran_batang.min+0.5} - ${datanya.detail_attribute.ukuran_batang.max-0.5} max` } ref={ukuranBatangInputRef} onInput={onInput} minLength="1" maxLength="3"/>
         </div>
         <div className={classess.control}>
           <label htmlFor="description">Jarak Duri <i>(mm)</i></label>
-          <input type="text" required id="jarak_duri" placeholder={(datanya.status == 'error') ? 'Gagal Loading Server...' : `min ${datanya.detail_attribute.jarak_duri.min} - ${datanya.detail_attribute.jarak_duri.max-0.5} max` } ref={jarakDuriInputRef} onInput={onInput} minLength="1" maxLength="4"/>
+          <input type="text" required id="jarak_duri" placeholder={(datanya.status == 'error') ? 'Gagal Loading Server...' : `min ${datanya.detail_attribute.jarak_duri.min+0.5} - ${datanya.detail_attribute.jarak_duri.max-0.5} max` } ref={jarakDuriInputRef} onInput={onInput} minLength="1" maxLength="4"/>
         </div>
         <div className={classess.actions} >
           <button>Cek Kematangan</button>
