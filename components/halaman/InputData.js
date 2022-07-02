@@ -71,7 +71,7 @@ function InputData(props) {
       setLoading(true);
       try {
         //fetch api post 
-        const response = await fetch("http://127.0.0.1:5000/", {
+        const response = await fetch("https://myfuzzybe2.herokuapp.com/", {
           method: "POST",      
           body: formdata,
         })

@@ -27,7 +27,7 @@ function DataSet(props) {
     });
 
     himpunan_fuzzy = props.data.himpunan_fuzzy;
-    url = "http://127.0.0.1:5000/";
+    url = "https://myfuzzybe2.herokuapp.com//";
 
     table_rule_base = rule_base.map((item, index) => {
       return (
