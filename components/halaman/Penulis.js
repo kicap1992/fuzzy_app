@@ -34,7 +34,7 @@ function Penulis(){
             <td>  </td>
             <td> Judul </td>
             <td> <i>:</i> </td>
-            <td className={classess.ini}> <b> IMPLEMENTASI  LOGIKA <i>FUZZY</i> PADA TINGKAT KEMATANGAN BUAH DURIAN BERBASIS <i>WEB</i></b> </td>
+            <td className={classess.ini}> <b> IMPLEMENTASI METODE LOGIKA <i>FUZZY</i> PADA DETEKSI TINGKAT KEMATANGAN BUAH DURIAN MENGGUNAKAN BAHASA PEMROGRAMAN <i>PYTHON</i></b> </td>
           </tr>
         </table>
       </div>

@@ -5,7 +5,7 @@ import classess from './MainNavigation.module.css'
 function MainNavigation() {
   return (
     <header className={classess.header}>
-      <div className={classess.logo}>Fuzzy Durian</div>
+      <div className={classess.logo}>Fuzzy Durian Lokal</div>
       <nav  className={classess.nav}>
         <ul>
           <li><Link href='/'>Cek Data</Link></li>

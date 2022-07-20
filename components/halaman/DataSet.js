@@ -16,7 +16,7 @@ function DataSet(props) {
       return (
         <tr key={index}>
           <td>{index}</td>
-          <td>{item.Usia}</td>
+          {/* <td>{item.Usia}</td> */}
           <td>{item.Berat}</td>
           <td>{item.Keliling}</td>
           <td>{item.Ukuran_batang}</td>
@@ -34,7 +34,7 @@ function DataSet(props) {
         <tr key={index}>
           <td>{item.No}</td>
           <td>{item.Rule}</td>
-          <td>{item.Usia}</td>
+          {/* <td>{item.Usia}</td> */}
           <td>{item.Berat}</td>
           <td>{item.Keliling}</td>
           <td>{item['Ukuran Batang']}</td>
@@ -48,7 +48,7 @@ function DataSet(props) {
       return (
         <tr key={index}>
           <td>{item.No}</td>
-          <td>{item.Usia}</td>
+          {/* <td>{item.Usia}</td> */}
           <td>{item.Berat}</td>
           <td>{item.Keliling}</td>
           <td>{item['Ukuran Batang']}</td>
@@ -73,7 +73,7 @@ function DataSet(props) {
               <thead>
                 <tr>
                   <th>ID</th>
-                  <th>Usia <br /> ( <i>Minggu</i> )</th>
+                  {/* <th>Usia <br /> ( <i>Minggu</i> )</th> */}
                   <th>Berat  <br /> ( <i>gram</i> )</th>
                   <th>Keliling  <br /> ( <i>cm</i> ) </th>
                   <th>Ukuran Batang  <br /> ( <i>cm</i> ) </th>
@@ -103,7 +103,7 @@ function DataSet(props) {
                 </tr>
               </thead>
               <tbody>
-                <tr>
+                {/* <tr>
                   <td rowSpan={10}>Input</td>
                   <td rowSpan={2}>Usia <br /> <i>(Minggu)</i> </td>
                   <td rowSpan={2}> <b><i>{himpunan_fuzzy[0]['Semesta Pembicaraan']}</i></b> </td>
@@ -113,8 +113,9 @@ function DataSet(props) {
                 <tr>
                   <td> <b><i>{himpunan_fuzzy[1][' Himpunan Fuzzy']}</i></b> </td>
                   <td> <b><i>{himpunan_fuzzy[1]['Domain']}</i></b> </td>
-                </tr>
+                </tr> */}
                 <tr>
+                  <td rowSpan={8}>Input</td>
                   <td rowSpan={2}>Berat <br /> <i>(gram)</i></td>
                   <td rowSpan={2}> <b><i>{himpunan_fuzzy[2]['Semesta Pembicaraan']}</i></b> </td>
                   <td> <b><i>{himpunan_fuzzy[2][' Himpunan Fuzzy']}</i></b> </td>
@@ -173,8 +174,8 @@ function DataSet(props) {
         <br /><hr />
         <div className={classess.control}>
           <h2 htmlFor="address">Himpunan <i>Fuzzy</i></h2>
-          <center><h3><i>Fuzzy</i> Usia</h3></center>
-          <img src={url+"image/usia"} className={classess.image} />
+          {/* <center><h3><i>Fuzzy</i> Usia</h3></center>
+          <img src={url+"image/usia"} className={classess.image} /> */}
           <center><h3><i>Fuzzy</i> Berat</h3></center>
           <img src={url+"image/berat"} className={classess.image} />
           <center><h3><i>Fuzzy</i> Keliling</h3></center>
@@ -193,7 +194,7 @@ function DataSet(props) {
                 <tr>
                   <th>No</th>
                   <th>Rule</th>
-                  <th>Usia</th>
+                  {/* <th>Usia</th> */}
                   <th>Berat</th>
                   <th>Keliling</th>
                   <th>Ukuran Batang</th>
@@ -216,7 +217,7 @@ function DataSet(props) {
               <thead>
                 <tr>
                   <th>No</th>
-                  <th>Usia</th>
+                  {/* <th>Usia</th> */}
                   <th>Berat</th>
                   <th>Keliling</th>
                   <th>Ukuran <br /> Batang</th>
